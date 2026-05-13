@@ -8,5 +8,7 @@ h1{
     color:darkblue;
 }
 p{
-    background
+    background-color: tomato;
+    color:white;
+    border: 2px solid black;
 }
