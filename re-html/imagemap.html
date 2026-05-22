@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Image Maps Practice</title>
 </head>
 <body>
-   <h2>Image Maps</h2>
-<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
 
-<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <h1>Interactive Image Map Showcase</h1>
+    <p>Click on the different objects in the image below to trigger actions:</p>
 
-<map name="workmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-</map> 
+    <!-- The image is linked to the map via usemap attribute -->
+    <img src="https://www.w3schools.com/html/workplace.jpg" 
+         alt="Workplace setup" 
+         usemap="#workmap" 
+         style="width:400px; height:379px; border:1px solid #ccc;">
+
+    <!-- Defining the clickable areas map -->
+    <map name="workmap">
+        <!-- Area 1: The Computer Screen (Rectangle) -->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.com" target="_blank">
+        
+        <!-- Area 2: The Smartphone (Rectangle) -->
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com" target="_blank">
+        
+        <!-- Area 3: The Coffee Cup (Circle with Javascript Alert) -->
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="#" onclick="showCoffeeMessage(); return false;">
+    </map>
+
+    <!-- JavaScript function for the coffee cup interaction -->
+    <script>
+        function showCoffeeMessage() {
+            alert("You successfully clicked the interactive coffee cup area!");
+        }
+    </script>
+
 </body>
 </html>
