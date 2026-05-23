@@ -16,10 +16,11 @@ h1{
 }
 /* Styling a specific paragraph with its own background */
 p.custom-box{
-    background-color:rgba(0, 0, 0,6);
+    background-color:rgba(0, 0, 0,0.2);
     padding: 30px;
     margin: 80px auto;
     width:50%;
     border-radius: 15px;
+    border: 2px solid gray;
     text-align: center;
 }
