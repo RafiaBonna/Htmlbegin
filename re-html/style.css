@@ -1,1 +1,4 @@
 /* Styling the entire web page background */
+body{
+    background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80');
+}
