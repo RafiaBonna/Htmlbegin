@@ -9,3 +9,8 @@ body{
 
 }
 /* Styling a specific heading text background */
+h1{
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 4px 2px 4px #000000;
+}
