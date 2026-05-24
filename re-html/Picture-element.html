@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Picture Element Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        picture img {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            border: 5px solid #333;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Responsive Image Using Picture Tag</h1>
+    <p>Resize your browser window width to see the image change automatically:</p>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80">
+        
+        <source media="(min-width: 465px)" srcset="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80">
+        
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Fallback Nature View">
+    </picture>
+
 </body>
 </html>
