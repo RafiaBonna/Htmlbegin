@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list practice</title>
+    <title>In-Depth HTML Lists Masterclass</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 30px;
+            background-color: #fcfcfc;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        /* CSS for the Navigation Menu */
+        .menu-bar {
+            list-style-type: none; /* Removes the dots */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2c3e50;
+            border-radius: 4px;
+        }
+        .menu-bar li {
+            float: left; /* Makes the list items sit side-by-side */
+        }
+        .menu-bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .menu-bar li a:hover {
+            background-color: #34495e;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>HTML Lists - Comprehensive Practical</h1>
+    <p>বন্নি, এই পেজটি ব্রাউজারে রান করে নিচের প্রতিটা লিস্টের বাম পাশের মার্কারগুলো মেলাও।</p>
+
+    <h2>1. Horizontal Navigation Menu (List without markers)</h2>
+    <ul class="menu-bar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+
+    <h2>2. Unordered Lists with CSS Shapes</h2>
     
+    <p><strong>Square Type:</strong></p>
+    <ul style="list-style-type: square;">
+        <li>Windows OS</li>
+        <li>Mac OS</li>
+    </ul>
+
+    <p><strong>Circle Type & Nested List:</strong></p>
+    <ul style="list-style-type: circle;">
+        <li>Beverages
+            <ul style="list-style-type: disc;">
+                <li>Hot Coffee</li>
+                <li>Green Tea</li>
+            </ul>
+        </li> <li>Fruits</li>
+    </ul>
+
+
+    <h2>3. Ordered Lists with Custom Roman Type</h2>
+    <ol type="I">
+        <li>Introduction to HTML</li>
+        <li>Advanced CSS Grid</li>
+        <li>JavaScript Core Concepts</li>
+    </ol>
+
+    <h2>4. Ordered List with Custom Start Position</h2>
+    <p>This list starts counting from number 25 instead of 1:</p>
+    <ol start="25">
+        <li>Database Management</li>
+        <li>Cloud Computing</li>
+        <li>Cyber Security</li>
+    </ol>
+
+
+    <h2>5. Description List (Dictionary Format)</h2>
+    <dl>
+        <dt>WDPF</dt>
+        <dd>- Web Design and Development Professional Course funded by IsDB-BISEW.</dd>
+        
+        <dt>CSS</dt>
+        <dd>- Cascading Style Sheets, used to design and beautify web layouts.</dd>
+    </dl>
+
 </body>
 </html>
