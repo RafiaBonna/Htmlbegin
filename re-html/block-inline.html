@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Block and Inline Masterclass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            line-height: 1.8;
+        }
+        /* Color for Block Elements to see their full width */
+        .block-box {
+            background-color: lightcoral;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        /* Color for Inline Elements to see their minimal width */
+        .inline-box {
+            background-color: lightblue;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Visualizing Block vs Inline Elements</h1>
+
+    <h2>1. Block-level Demonstration</h2>
     
+    <p class="block-box">I am a Paragraph (Block Element). Notice how I stretch from left to right completely!</p>
+    
+    <div class="block-box">I am a Div (Block Element). Even though my text is short, I occupy the whole row.</div>
+
+
+    <h2>2. Inline Demonstration</h2>
+    
+    <span class="inline-box">I am Span 1 (Inline)</span>
+    <span class="inline-box">I am Span 2 (Inline)</span>
+    <a href="#" class="inline-box">I am a Link (Inline)</a>
+    
+    <p>Look at the background colors above! The blue inline elements are sitting side-by-side because they don't force a new line.</p>
+
+
+    <h2>3. Practical Combination</h2>
+    
+    <div style="background-color: #333; color: white; padding: 20px; border-radius: 8px;">
+        <h3>Inside a Block Div Container</h3>
+        <p>My sister has <span style="color: cyan; font-weight: bold;">Cyan Blue</span> eyes and my brother loves <span style="color: lime; font-weight: bold;">Lime Green</span> shirts.</p>
+    </div>
+
 </body>
 </html>
